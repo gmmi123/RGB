@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: xx xxx, xx, LIC=47GU5-G1083-EVF1R-K5NDF-PZ1P2-VQWL5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  C:\Users\27991\AppData\Local\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\27991\Desktop\STM32HALProject\RGB\MDK-ARM\RGB.uvprojx
+Project File Date:  10/07/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\27991\AppData\Local\Keil_v5\ARM\ARMCC\Bin'
+Build target 'RGB'
+compiling main.c...
+compiling RGB.c...
+..\Core\Src\RGB.c(346): warning:  #940-D: missing return statement at end of non-void function "Color_Gra" 
+  }
+..\Core\Src\RGB.c(395): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      float x = c * (1 - fabs(fmod(h / 60.0, 2) - 1));
+..\Core\Src\RGB.c(533): warning:  #188-D: enumerated type mixed with another type
+  			Color_Gra(&RGB_0,R,Dowm|Oscillating|Speed(1));
+..\Core\Src\RGB.c(534): warning:  #188-D: enumerated type mixed with another type
+  			Color_Gra(&RGB_0,G,Up|Oscillating|Speed(1));
+..\Core\Src\RGB.c(538): warning:  #188-D: enumerated type mixed with another type
+  			Color_Gra(&RGB_0,G,Up|Oscillating|Speed(1));
+..\Core\Src\RGB.c(539): warning:  #188-D: enumerated type mixed with another type
+  			Color_Gra(&RGB_0,B,Up|Oscillating|Speed(1));
+..\Core\Src\RGB.c(543): warning:  #188-D: enumerated type mixed with another type
+  			Color_Gra(&RGB_0,B,Up|Oscillating|Speed(1));
+..\Core\Src\RGB.c(544): warning:  #188-D: enumerated type mixed with another type
+  			Color_Gra(&RGB_0,R,Dowm|Oscillating|Speed(1));
+..\Core\Src\RGB.c(581): warning:  #188-D: enumerated type mixed with another type
+  		Color_Gra(&RGB_1,R,Up|Oscillating|Speed_Normal);
+..\Core\Src\RGB.c(582): warning:  #188-D: enumerated type mixed with another type
+  		Color_Gra(&RGB_1,G,Up|Oscillating|Speed_Normal);
+..\Core\Src\RGB.c(642): warning:  #177-D: variable "a"  was declared but never referenced
+  	static int a=0;
+..\Core\Src\RGB.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=13670 RO-data=466 RW-data=56 ZI-data=16064  
+FromELF: creating hex file...
+"RGB\RGB.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_RGB
+  C:/Users/27991/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/27991/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
